@@ -143,9 +143,16 @@
       height: 17rem;
     }
 
+    #projects .card {
+      overflow: hidden;
+    }
+    #projects .card img:hover {
+      transition: 0.5s;
+      transform: scale(1.1);
+    }
     #projects .card:hover {
-      background-color: #7efff5;
-      transform: scale(1.025);
+      transition: 0.5s;
+      background-color: #7efff5 ;
     }
     #projects .card-title {
       font-size: 1.5rem;
