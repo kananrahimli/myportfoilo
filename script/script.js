@@ -3,7 +3,6 @@ $(document).ready(function(){
     var navContainer=$('#navContainer');
     var arrpwUp=$('#arrowUp');
 
-    
     $(window).scroll(function(){
         if(scrollY>10){
           navContainer.addClass('navStyleScroll')
@@ -19,7 +18,9 @@ $(document).ready(function(){
         arrpwUp.click(function(){
             window.scrollTo('0','0')
         })
-     })
+     });
+    //  $('body').scrollspy({ target: '#navContainer' })
+
   })
 
 var navLink=document.querySelectorAll('.link'),
@@ -33,8 +34,8 @@ footerYear=document.querySelectorAll('.footerYear')
 // Link click action
 function linkChange(){
     navLink.forEach(e=>{
-        e.classList.remove('active1');
-        this.classList.add('active1');
+        e.classList.remove('active');
+        this.classList.add('active');
         navlist.style.right='-100%';
     });
 }

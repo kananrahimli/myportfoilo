@@ -7,6 +7,7 @@
     body {
       background-color: #f5f6fa;
       font-family: var(--body-font);
+      position: relative;
     }
     * {
       box-sizing: border-box;
@@ -92,11 +93,11 @@
     }
 
     ul li a:hover{
-      border-bottom: 4px solid #fff;
+      border-bottom: 4px solid #fff !important;
     }
 
-    .active1 {
-      border-bottom: 4px solid #fff;
+    .active {
+      border-bottom: 4px solid #fff !important ;
     }
 
     /* ABout */
@@ -131,6 +132,8 @@
     }
 
     #projects img {
+      transform: scale(1.15);
+      margin: 0;
       width: 100%;
       height: 100%;
     }
@@ -162,6 +165,7 @@
       font-size: 0.75rem;
       
     }
+    
     /* Skills */
     #skills {
       padding: 5rem 3rem 0rem;
