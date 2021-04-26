@@ -37,6 +37,16 @@
       background-attachment: fixed;
       height: 110vh;
       overflow: hidden;
+      position: relative;
+    }
+
+    #home::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #bdc3c7;
+      opacity: 0.7;
     }
     
 
@@ -139,23 +149,44 @@
     }
     
     #projects .card {
+      position: relative;
       cursor: pointer;
       box-shadow: 5px 5px 10px grey;
       transition: 0.4s linear;
       margin-bottom: 1rem;
       height: 17rem;
-    }
-
-    #projects .card {
       overflow: hidden;
     }
-    #projects .card img:hover {
-      transition: 0.5s;
-      transform: scale(1.1);
+
+    #projects .card::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      background-color: #7efff5;
+      z-index: 1;
+      opacity: 0.5;
+      transition: all 0.4s;
     }
+    #projects .card:hover::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #7efff5;
+      z-index: 1;
+      opacity: 0.5;
+    }
+    .actions{
+      z-index: 10;
+    }
+    /* #projects .card img:hover {
+      transition: 0.5s;
+      transform: scale(1.0);
+    } */
     #projects .card:hover {
       transition: 0.5s;
-      background-color: #7efff5 ;
+      /* background-color: #7efff5 ; */
     }
     #projects .card-title {
       font-size: 1.5rem;
